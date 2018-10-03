@@ -16,10 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".InvoiceActivity"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".OrderActivity"></activity>
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".InvoiceActivity"></activity>
     </application>
 
 </manifest>

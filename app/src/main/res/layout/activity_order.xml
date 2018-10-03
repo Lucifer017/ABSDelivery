@@ -27,7 +27,7 @@
             android:layout_weight="3"
             android:textSize="18sp"
             android:textColor="@color/colorBlack"
-            android:text="@string/mie_ayam_baso"/>
+            android:text="@string/nasi"/>
 
         <TextView
             android:layout_width="0dp"
@@ -36,7 +36,7 @@
             android:textSize="18sp"
             android:textStyle="italic"
             android:textColor="@color/colorBlack"
-            android:text="Rp. 10.000"/>
+            android:text="Rp. 3.000"/>
 
         <EditText
             android:id="@+id/menu_makan_satu"
@@ -51,6 +51,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:text="@string/ayam_bakar"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorBlack"
+            android:text="Rp. 15.000"/>
+
+        <EditText
+            android:id="@+id/menu_makan_dua"
+            android:layout_width="0dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
@@ -58,7 +88,7 @@
             android:layout_weight="3"
             android:textSize="18sp"
             android:textColor="@color/colorBlack"
-            android:text="@string/mie_yamin_baso"/>
+            android:text="@string/ayam_sayur"/>
 
         <TextView
             android:layout_width="0dp"
@@ -70,7 +100,7 @@
             android:text="Rp. 12.000"/>
 
         <EditText
-            android:id="@+id/menu_makan_dua"
+            android:id="@+id/menu_makan_tiga"
             android:layout_width="0dp"
             android:inputType="number"
             android:layout_height="wrap_content"
@@ -88,7 +118,7 @@
             android:layout_weight="3"
             android:textSize="18sp"
             android:textColor="@color/colorBlack"
-            android:text="@string/mie_pangsit_baso"/>
+            android:text="@string/rendang"/>
 
         <TextView
             android:layout_width="0dp"
@@ -100,7 +130,7 @@
             android:text="Rp. 15.000"/>
 
         <EditText
-            android:id="@+id/menu_makan_tiga"
+            android:id="@+id/menu_makan_empat"
             android:layout_width="0dp"
             android:inputType="number"
             android:layout_height="wrap_content"
@@ -143,6 +173,7 @@
             android:id="@+id/menu_minum_satu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:layout_weight="1"/>
 
     </LinearLayout>
@@ -172,6 +203,7 @@
         <EditText
             android:id="@+id/menu_minum_dua"
             android:layout_width="0dp"
+            android:inputType="number"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
@@ -202,6 +234,7 @@
         <EditText
             android:id="@+id/menu_minum_tiga"
             android:layout_width="0dp"
+            android:inputType="number"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 

@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Kedai Mie</string>
-    <string name="mie_ayam_baso">Mie Ayam Baso</string>
-    <string name="mie_yamin_baso">Mie Yamin Baso</string>
-    <string name="mie_pangsit_baso">Mie Pangsit Baso</string>
+    <string name="app_name">ABSDelivery</string>
+    <string name="nasi">Nasi</string>
+    <string name="ayam_bakar">Ayam Bakar</string>
+    <string name="rendang">Rendang</string>
+    <string name="ayam_sayur">Ayam Sayur</string>
     <string name="es_teh_manis">Es Teh Manis</string>
     <string name="aneka_jus">Aneka Jus</string>
     <string name="air_mineral">Air Mineral</string>
