@@ -2,9 +2,11 @@ package comlucifer017.github.absdelivery;
 
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -79,20 +81,47 @@ public class OrderActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        String title = null;
+        switch (item.getItemId()){
+            case R.id.action_kontak:
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:08121409681"));
+                startActivity(intent);
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+                break;
+            case R.id.action_home:
+                startActivity(new Intent(OrderActivity.this, MainActivity.class));
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+                break;
+//            case R.id.action_cardview:
+//                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     public void onBackPressed() {
         super.onBackPressed();
         overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case android.R.id.home : {
-                finish();
-                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-                break;
-            }
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()){
+//            case android.R.id.home : {
+//                finish();
+//                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+//                break;
+//            }
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 }

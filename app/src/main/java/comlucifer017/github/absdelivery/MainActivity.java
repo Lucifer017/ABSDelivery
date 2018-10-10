@@ -33,12 +33,14 @@ public class MainActivity extends AppCompatActivity {
         String title = null;
         switch (item.getItemId()){
             case R.id.action_kontak:
-                title="Mode List";
-//                showListCountry();
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:08121409681"));
+                startActivity(intent);
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                 break;
             case R.id.action_home:
-                title="ABSDelivery";
-//                showRecyclerGrid();
+                startActivity(new Intent(MainActivity.this, MainActivity.class));
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                 break;
 //            case R.id.action_cardview:
 //                break;
